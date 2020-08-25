@@ -15,7 +15,9 @@ The following web application is used to predict the sentiment of the reviews pr
 <h2> Dataset </h2>
 
   In this project, we are using dataset from kaggle . The link for the dataset is <a href="https://www.kaggle.com/snap/amazon-fine-food-reviews" > Amazon Fine Food Reviews </a><br><br>
-  This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. It also includes reviews from all other Amazon categories
+  This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. It also includes reviews from all other Amazon categories.
+  
+  <img src="output/score.png"></img>
 
 <br><br>
 <h2> Installation </h2>
@@ -60,6 +62,8 @@ Word vectors and similarity -> sense2vec
 Text classification model -> SpaCy TextCategorizer
 
 <b>We will treat rating 4 and 5 as positive and rest as negative reviews.</b>
+
+<img src="output/score_boolean.png"></img>
 
   <b>1. Tokenization </b><br>
   First step in any nlp pipeline is tokenizing text i.e breaking down paragraphs into sentenses and then sentenses into words, punctuations and so on. we will load english language model to tokenize our english text. Every language is different and have different rules. Spacy offers 8 different language models.
